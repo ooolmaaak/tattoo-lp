@@ -1,0 +1,169 @@
+:root {
+  --color-white: #ffffff; /* Белый */
+  --color-dark: #353535; /* Темно-серый */
+  --color-red: #b64b4b; /* Красный */
+  --color-gray: #d5d5d5; /* Серый */
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  background-color: var(--color-white);
+}
+
+a,
+p,
+section,
+button,
+img {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.red {
+  color: var(--color-red);
+}
+
+/* mobile container */
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* ============= */
+/* HEADER MOBILE */
+
+.header {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  gap: 10px;
+}
+
+.menu-line {
+  height: 1px;
+  width: 25px;
+  background-color: var(--color-red);
+}
+
+.menu-btn {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-red);
+}
+
+/* ============= */
+/* MAIN SECTION MOBILE */
+
+.main-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.main-img {
+  max-width: 268px;
+  max-height: 250px;
+}
+
+.main-heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-description {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.book-btn {
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  background-color: transparent;
+  color: var(--color-red);
+  border: none;
+  border-bottom: 1px solid var(--color-red);
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  padding-bottom: 15px;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 900;
+  text-align: center;
+  color: var(--color-dark);
+  line-height: 100%;
+  margin-top: 120px;
+  margin-bottom: 0;
+}
+
+/* ============= */
+/* ABOUT SECTION MOBILE */
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+  gap: 40px;
+}
+
+.separate-items {
+  padding-top: 10px;
+  position: relative;
+  display: flex;
+  border-top: 1px solid var(--color-gray);
+}
+
+.separate-heading {
+  font-size: 18px;
+  color: var(--color-gray);
+}
+
+.about-img {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  max-width: 177px;
+  max-height: 189px;
+}
+
+.about-decorative {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 180px;
+}
+
+.about-decorative-text {
+  font-family: 'Tangerine', cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+}
+
+.about-decorative-img {
+  max-width: 120px;
+  max-height: 140px;
+  margin-top: 30px;
+}
+
+.about-description {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ============= */
+/* ABOUT SECTION MOBILE */
+
+.portfolio-section {
+  padding-top: 100px;
+}
