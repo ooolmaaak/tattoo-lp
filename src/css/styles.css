@@ -2,7 +2,7 @@
   --color-white: #ffffff; /* Белый */
   --color-dark: #353535; /* Темно-серый */
   --color-red: #b64b4b; /* Красный */
-  --color-gray: #d5d5d5; /* Серый */
+  --color-gray: #c2c2c2; /* Серый */
 }
 
 body {
@@ -41,14 +41,25 @@ h2 {
   line-height: 100%;
 }
 
+h3 {
+  font-size: 60px;
+  font-weight: 900;
+  color: var(--color-dark);
+  line-height: 100%;
+}
+
 .red {
   color: var(--color-red);
 }
 
 /* mobile container */
 .container {
+  max-width: 375px;
   padding-left: 30px;
   padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 }
 
 /* separator */
@@ -82,6 +93,7 @@ h2 {
 }
 
 .menu-btn-area {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -89,6 +101,7 @@ h2 {
 }
 
 .menu-btn {
+  cursor: pointer;
   background-color: transparent;
   border: none;
   font-size: 14px;
@@ -100,13 +113,20 @@ h2 {
 /* MAIN SECTION MOBILE */
 
 .main-section {
-  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40vh;
   padding-bottom: 50px;
 }
 
 .main-img {
+  position: absolute;
+  top: 0;
+  left: 0;
   max-width: 268px;
   max-height: 250px;
+  object-fit: contain;
 }
 
 .main-heading {
@@ -117,7 +137,7 @@ h2 {
 .main-description {
   text-align: center;
   font-size: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   color: var(--color-dark);
 }
 
@@ -146,19 +166,25 @@ h2 {
   gap: 40px;
 }
 
+.about-section .separate-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .about-img {
-  position: absolute;
+  /* position: absolute;
   top: 15px;
-  right: 0;
-  max-width: 177px;
-  max-height: 189px;
+  right: 0; */
+  max-width: 180px;
+  max-height: 180px;
 }
 
 .about-decorative {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 180px;
+  /* margin-top: 180px; */
 }
 
 .about-decorative-text {
@@ -197,7 +223,7 @@ h2 {
 .portfolio-img {
   flex-grow: 1;
   width: 100%;
-  height: 315px;
+  height: 400px;
   object-fit: cover;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -352,8 +378,8 @@ h2 {
 
 .contacts-images-area {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
 }
 
@@ -412,6 +438,7 @@ h2 {
 }
 
 .close-menu {
+  cursor: pointer;
 }
 
 .close-menu-icon {
