@@ -22,8 +22,10 @@
     <!-- HEADER -->
 
     <header class="header">
-      <div class="menu-line"></div>
-      <a href="" class="menu-btn">MENU</a>
+      <div class="menu-btn-area">
+        <div class="menu-line"></div>
+        <button type="button" class="menu-btn">MENU</button>
+      </div>
     </header>
     <img src="./images/mobile/flowers-mob-png.png" alt="" class="main-img" />
     <section class="main-section container">
@@ -38,7 +40,7 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="about-section container">
+    <section class="about-section container" id="about">
       <div class="separate-items">
         <p class="separate-heading">ABOUT</p>
         <img src="/src/images/mobile/melisa-mob.jpg" alt="" class="about-img" />
@@ -65,7 +67,7 @@
     </section>
 
     <!-- PORTFOLIO -->
-    <section class="portfolio-section container">
+    <section class="portfolio-section container" id="portfolio">
       <div class="separate-items">
         <p class="separate-heading">PORTFOLIO</p>
       </div>
@@ -130,7 +132,7 @@
 
     <!-- TEAM -->
 
-    <section class="team-section container">
+    <section class="team-section container" id="team">
       <div class="separate-items">
         <p class="separate-heading">TEAM</p>
       </div>
@@ -175,7 +177,7 @@
     </section>
 
     <!-- REVIEWS -->
-    <section class="reviews-section container">
+    <section class="reviews-section container" id="reviews">
       <div class="separate-items">
         <p class="separate-heading">REVIEWS</p>
       </div>
@@ -194,7 +196,7 @@
     </section>
 
     <!-- CONTACTS -->
-    <section class="contacts-section container">
+    <section class="contacts-section container" id="contacts">
       <div class="separate-items">
         <p class="separate-heading">CONTACTS</p>
       </div>
@@ -258,6 +260,46 @@
       </div>
       <div class="separate-items"></div>
     </footer>
+
+    <div class="menu container">
+      <div href="#" class="close-menu">
+        <svg class="close-menu-icon" width="32" height="32">
+          <use href="./images/icons.svg#close-icon"></use>
+        </svg>
+      </div>
+      <div class="menu-links-area">
+        <a href="#about" class="menu-link">ABOUT</a>
+        <a href="#portfolio" class="menu-link">PORTFOLIO</a>
+        <a href="#reviews" class="menu-link">REVIEWS</a>
+        <a href="#team" class="menu-link">TEAM</a>
+        <a href="#contacts" class="menu-link">CONTACTS</a>
+      </div>
+
+      <div class="contacts-area">
+        <a href="tel:+312121111123" class="contacts-item">+312-121-11-1123</a>
+        <a href="mailto:melisa@gmail.com" class="contacts-item"
+          >melisa@gmail.com</a
+        >
+      </div>
+
+      <div class="social-media-area">
+        <a href="#" class="social-media-item">
+          <svg class="social-media-icon" width="58" height="58">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+        <a href="#" class="social-media-item">
+          <svg class="social-media-icon" width="58" height="58">
+            <use href="./images/icons.svg#icon-twitter"></use>
+          </svg>
+        </a>
+        <a href="#" class="social-media-item">
+          <svg class="social-media-icon" width="58" height="58">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
     <script type="module" src="./index.js"></script>
   </body>
 </html>
